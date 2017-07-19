@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 mongoose.connect('mongodb://amitkhatkar:khatkarg1@ds157112.mlab.com:57112/testappdb');
-var port = 3001;
+var port = 80;
 var router = express.Router();
 //start
 
