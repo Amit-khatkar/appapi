@@ -74,7 +74,6 @@ router.route('/catpost')
                 res.send(err);
 
 
-            console.log(post.length);
                 if(post.length>0){
                     res.status(200).send;
                 res.json({status: "ok", code: 200, posts: post});
