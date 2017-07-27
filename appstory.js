@@ -287,6 +287,6 @@ router.route('/glogin').post(function (req,res) {
 //end
 //sign in with google
 
-app.listen(port);
+app.listen( process.env.PORT || port);
 app.use("/api", router);
 console.log('We are running on Port ' + port);
