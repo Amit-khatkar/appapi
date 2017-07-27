@@ -3,8 +3,8 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var crypto = require('crypto');
-var Post = require("/model/postmodel");
-var User = require("/model/usermodel");
+var Post = require("./model/postmodel");
+var User = require("./model/usermodel");
 
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
