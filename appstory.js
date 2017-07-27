@@ -3,14 +3,14 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var crypto = require('crypto');
-var Post = require("./model/postmodel");
-var User = require("./model/usermodel");
+var Post = require("/model/postmodel");
+var User = require("/model/usermodel");
 
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
 
 mongoose.connect('mongodb://amitkhatkar:khatkarg1@ds157112.mlab.com:57112/testappdb');
-var port = 80;
+var port = 3000;
 var router = express.Router();
 //start
 
