@@ -9,8 +9,8 @@ var User = require("./model/usermodel");
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://amitkhatkar:khatkarg1@ds157112.mlab.com:57112/testappdb');
-var port = 80;
+mongoose.connect('mongodb://amitkhatkar:[password]@ds157112.mlab.com:57112/testappdb');
+var port = 3000;
 var router = express.Router();
 //start
 

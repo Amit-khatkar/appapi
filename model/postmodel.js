@@ -1,7 +1,7 @@
 var mongoose     = require('mongoose');
 var Schema       = mongoose.Schema;
 var autoIncrement = require('mongoose-auto-increment');
-var connection = mongoose.createConnection('mongodb://amitkhatkar:khatkarg1@ds157112.mlab.com:57112/testappdb');
+var connection = mongoose.createConnection('mongodb://amitkhatkar:[assword@ds157112.mlab.com:57112/testappdb');
 autoIncrement.initialize(connection);
 var posts = new Schema({
     title: String,
